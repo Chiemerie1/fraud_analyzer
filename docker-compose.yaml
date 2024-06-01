@@ -1,0 +1,8 @@
+version: '3.7'
+services:
+  api:
+    build: .
+    volumes:
+      - ./db/data.db://usr/src/application/data.db:rw
+    ports:
+      - 8000:8080
